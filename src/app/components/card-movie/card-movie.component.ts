@@ -10,8 +10,11 @@ export class CardMovieComponent {
 
   constructor(){  }
 
-ngOninit():void{
-  console.log(this.movie);
-}
+  ngOninit():void{
+    console.log(this.movie);
+  }
 
+  getImage(){
+    return this.movie.Poster !== 'N/A' ? this.movie.Poster : 'http://via.placeholder.com/600'
+  }
 }
