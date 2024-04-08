@@ -1,7 +1,7 @@
 <div class="app">
   <h1>listado de peliculas</h1>
   <div class="search">
-    <input type="text" (keyup)="getMovies($event)" placeholder="buscar pelicula">
+    <input type="text" #movieSearchInput placeholder="buscar pelicula">
 
   </div>
   <div *ngIf="movies.length > 0; else empty" class="container">
