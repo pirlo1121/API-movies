@@ -1,10 +1,10 @@
 <div class="app">
   <h1>listado de peliculas</h1>
   <div class="search">
-    <input type="text" placeholder="buscar pelicula">
-    <img src="./../../../assets/search.svg" alt="search">
+    <input type="text" #search placeholder="buscar pelicula">
+    <img (click)="getMovies(search.value)" src="./../../../assets/search.svg" alt="search">
   </div>
   <div class="container">
-    <app-card-movie></app-card-movie>
+    <app-card-movie *ngFor="let movie of movies" [movie]="movie"></app-card-movie>
   </div>
 </div>

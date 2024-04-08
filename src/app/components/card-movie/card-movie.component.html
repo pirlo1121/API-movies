@@ -1,8 +1,8 @@
 <div class="movie">
-  <div><p>2024</p></div>
-  <div><img src="" alt=""></div>
+  <div><p>{{movie.Year}}</p></div>
+  <div><img [src]="movie.Poster" [alt]="movie.Title"></div>
   <div>
-    <span>movie type</span>
-    <h3>titulo</h3>
+    <span>{{movie.Type}}</span>
+    <h3>{{movie.Title}}</h3>
   </div>
 </div>
